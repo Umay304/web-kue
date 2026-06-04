@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio | Nama Anda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A8A',    /* Biru Navy Gelap */
+            secondary: '#2563EB',  /* Biru Utama / Core Blue */
+            accent: '#60A5FA',     /* Biru Muda / Highlight */
+            light: '#F4F7FC',      /* Latar Belakang Biru Es Sangat Terang */
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-light text-primary">
+  <nav class="py-4 px-6 flex justify-between items-center border-b border-primary/10 bg-light/80 sticky top-0 backdrop-blur-md z-50">
+    <div class="text-2xl font-bold">✨<span class="text-secondary">Nama</span></div>
+    <div class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-secondary transition">Home</a>
+      <a href="#about" class="hover:text-secondary transition">Tentang</a>
+      <a href="#skills" class="hover:text-secondary transition">Keterampilan</a>
+      <a href="#projects" class="hover:text-secondary transition">Proyek</a>
+      <a href="#contact" class="hover:text-secondary transition">Kontak</a>
+    </div>
+    <button id="menu-btn" class="md:hidden text-xl focus:outline-none">☰</button>
+    
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-light border-b border-primary/10 flex flex-col p-4 space-y-3 shadow-lg md:hidden">
+      <a href="#home" class="hover:text-secondary transition">Home</a>
+      <a href="#about" class="hover:text-secondary transition">Tentang</a>
+      <a href="#skills" class="hover:text-secondary transition">Keterampilan</a>
+      <a href="#projects" class="hover:text-secondary transition">Proyek</a>
+      <a href="#contact" class="hover:text-secondary transition">Kontak</a>
+    </div>
+  </nav>
+
+  <section id="home" class="py-24 px-6 max-w-6xl mx-auto text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Halo, Saya <span class="text-secondary">Umar Hasan Yusli</span></h1>
+    <p class="text-xl text-primary/80 mb-8 max-w-3xl mx-auto">Seorang <span class="font-semibold text-secondary">progamer</span> yang bersemangat membangun arsitektur backend yang kokoh serta antarmuka frontend yang interaktif.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="px-6 py-3 bg-secondary text-white font-medium rounded-lg hover:bg-blue-700 transition shadow-md">Hubungi Saya</a>
+      <a href="#projects" class="px-6 py-3 bg-transparent border-2 border-primary text-primary font-medium rounded-lg hover:bg-primary/10 transition">Lihat Proyek</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 px-6 bg-white/60">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Tentang Saya</h2>
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <img src="https://via.placeholder.com/400x500/1E3A8A/FFFFFF?text=Foto+Anda" alt="Foto Profil" class="rounded-xl shadow-lg w-full object-cover" />
+        </div>
+        <div>
+          <p class="mb-4 text-primary/90 leading-relaxed">
+            Saya adalah siswa <span class="font-semibold">SMK Telkom Malang</span> yang fokus mendalami pengembangan aplikasi web secara menyeluruh (*Fullstack Development*). 
+          </p>
+          <p class="mb-6 text-primary/90 leading-relaxed">
+            Memiliki fondasi kuat dalam logika pemrograman lewat bahasa <span class="font-semibold text-secondary">Java</span> untuk kebutuhan *backend*, serta berpengalaman menyusun antarmuka modern yang responsif menggunakan ekosistem *frontend* terkini.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-secondary/10 text-secondary font-medium rounded-full text-sm">Java & Spring</span>
+            <span class="px-4 py-2 bg-secondary/10 text-secondary font-medium rounded-full text-sm">RESTful API</span>
+            <span class="px-4 py-2 bg-secondary/10 text-secondary font-medium rounded-full text-sm">MySQL / PostgreSQL</span>
+            <span class="px-4 py-2 bg-secondary/10 text-secondary font-medium rounded-full text-sm">React.js & Tailwind</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-16 px-6 bg-primary text-light">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Keterampilan Teknis</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white/10 p-6 rounded-xl text-center border border-white/5 backdrop-blur-sm">
+          <div class="text-4xl mb-2">☕</div>
+          <h3 class="font-bold text-lg">Java Backend</h3>
+          <p class="text-xs mt-1 text-light/70">OOP, Spring Boot, Robust Logic</p>
+        </div>
+        <div class="bg-white/10 p-6 rounded-xl text-center border border-white/5 backdrop-blur-sm">
+          <div class="text-4xl mb-2">⚙️</div>
+          <h3 class="font-bold text-lg">RESTful API</h3>
+          <p class="text-xs mt-1 text-light/70">CRUD, Integrasi Data, JSON</p>
+        </div>
+        <div class="bg-white/10 p-6 rounded-xl text-center border border-white/5 backdrop-blur-sm">
+          <div class="text-4xl mb-2">⚛️</div>
+          <h3 class="font-bold text-lg">React & Tailwind</h3>
+          <p class="text-xs mt-1 text-light/70">SPA, State Management, UI</p>
+        </div>
+        <div class="bg-white/10 p-6 rounded-xl text-center border border-white/5 backdrop-blur-sm">
+          <div class="text-4xl mb-2">🗄️</div>
+          <h3 class="font-bold text-lg">Databases</h3>
+          <p class="text-xs mt-1 text-light/70">MySQL, PostgreSQL, Query Optimization</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Proyek Utama</h2>
+      <p class="text-center text-primary/70 mb-12">Aplikasi end-to-end yang telah saya kembangkan</p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="h-48 bg-secondary/10 flex items-center justify-center relative">
+              <span class="text-5xl">🛒</span>
+              <span class="absolute top-3 right-3 bg-primary text-light text-xs px-2 py-1 rounded">Fullstack</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2">E-Commerce Application</h3>
+              <p class="text-primary/80 text-sm mb-4">Aplikasi toko online dengan backend Java (Spring) untuk manajemen stok & transaksi, dikombinasikan dengan dashboard analitik berbasis React.</p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#" class="text-secondary font-medium hover:underline inline-block">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="h-48 bg-accent/20 flex items-center justify-center relative">
+              <span class="text-5xl">🔐</span>
+              <span class="absolute top-3 right-3 bg-primary text-light text-xs px-2 py-1 rounded">Backend API</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2">Secure Notes Service</h3>
+              <p class="text-primary/80 text-sm mb-4">RESTful API untuk aplikasi catatan terenkripsi. Dibangun menggunakan Java dengan sistem otentikasi JWT (JSON Web Token) dan database MySQL.</p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#" class="text-secondary font-medium hover:underline inline-block">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="h-48 bg-primary/10 flex items-center justify-center relative">
+              <span class="text-5xl">🌐</span>
+              <span class="absolute top-3 right-3 bg-primary text-light text-xs px-2 py-1 rounded">Frontend</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-xl mb-2">Interactive Management UI</h3>
+              <p class="text-primary/80 text-sm mb-4">Sistem antarmuka pengguna berbasis React dan Tailwind CSS yang terintegrasi penuh ke API publik untuk manajemen data secara *real-time*.</p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="#" class="text-secondary font-medium hover:underline inline-block">Lihat Detail →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 px-6 bg-secondary text-light">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Mari Berkolaborasi!</h2>
+      <p class="mb-10 max-w-2xl mx-auto opacity-90">
+        Punya proyek menarik atau butuh *Fullstack Developer* untuk tim Anda? Kirim pesan — saya siap mendiskusikan integrasi sistem hingga desain antarmuka!
+      </p>
+
+      <form class="space-y-6 max-w-xl mx-auto">
+        <input type="text" placeholder="Nama Anda" class="w-full p-4 rounded-lg bg-light/20 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-accent" />
+        <input type="email" placeholder="Email" class="w-full p-4 rounded-lg bg-light/20 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-accent" />
+        <textarea rows="4" placeholder="Pesan Anda" class="w-full p-4 rounded-lg bg-light/20 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+        <button type="submit" class="w-full py-4 bg-white text-secondary font-bold rounded-lg hover:bg-light transition">Kirim Pesan</button>
+      </form>
+
+      <div class="mt-12 flex justify-center space-x-6">
+        <a href="#" class="text-light hover:text-accent text-2xl">𝕏</a>
+        <a href="#" class="text-light hover:text-accent text-2xl">LinkedIn</a>
+        <a href="#" class="text-light hover:text-accent text-2xl">GitHub</a>
+        <a href="#" class="text-light hover:text-accent text-2xl">📧</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-primary/60 bg-blue-50">
+    <p>© 2026 Nama Anda. Dibuat dengan 💙 dan Tailwind CSS.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const links = mobileMenu.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
